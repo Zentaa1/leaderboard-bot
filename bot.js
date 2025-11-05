@@ -105,7 +105,7 @@ async function postLeaderboard() {
 client.once("ready", () => {
   console.log(`Logged in as ${client.user.tag}`);
   postLeaderboard();
-  setInterval(postLeaderboard, 3 * 60 * 60 * 1000); // every 3 hours
+  setInterval(postLeaderboard, 24 * 60 * 60 * 1000); // every 24 hours
 });
 
 client.on("messageCreate", async (message) => {

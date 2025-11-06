@@ -78,6 +78,12 @@ async function postLeaderboard() {
     .setColor(0x00AE86)
     .setTimestamp();
 
+          embed.addFields({
+          name: "🎁 Prizes",
+          value: `🏆 **1st:** $1000\n🥈 **2nd:** $500\n🥉 **3rd:** $300\n🎲 **2 Random Winners:** $100 each`,
+          inline: false,
+        });
+
   data.summarizedBets
     .slice(0, 15) // top 15 only
     .forEach((entry, index) => {
